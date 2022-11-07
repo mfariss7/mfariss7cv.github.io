@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    background-image: url(DIDESA3.png);
+
+}
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    color: #BF9742;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 20px black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;  
+    margin-right: 25px;  
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+nav ul li a:hover , 
+nav ul li a.active {
+    background: #EDDFB3;
+    color: #BF9742;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2.1);
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.6);
+}
+
+.background, 
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    padding-left: 0px;
+}
+
+
+.roti {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+.roti1 {
+    position: absolute;
+    transform: translateZ(-10px) scale(0.6) rotate(-20deg);
+    align-items: center;
+    left: 30px;
+    
+}
+.roti2 {
+    position: relative;
+    transform: translateZ(-7px) scale(1.6) rotate(-20deg);
+    align-items: center;
+    left: 25px;
+}
+.roti3 {
+    position: relative;
+    transform: translateZ(-8px) scale(1);
+    align-items: center;
+}
+.roti4 {
+    position: relative;
+    transform: translateZ(-3px) scale(0.5);
+    right: 200px;
+}
+.roti5 {
+    position: relative;
+    transform: translateZ(-4px) scale(1);
+}
+.roti6 {
+    position: relative;
+    transform: translateZ(-9px) scale(1.9) rotate(25deg);
+    left: 55px;
+    bottom: 20px;
+}
+
+
+.tittle {
+    font-size: 7rem;
+    color: #BF9742;
+    text-shadow: 2px 2px 4px black;
+}
+
+section {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+.just {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: blueviolet;
+    color: blanchedalmond;
+}
+
